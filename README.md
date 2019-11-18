@@ -67,6 +67,11 @@ screen -dm -S minecraft /home/pi/Minecraft_Server/minecraft.sh
 
 Then hit Ctrl+X then hit y then type in sudo reboot and your done
 
+Notice To see your command line type in 
+
+sudo screen -r minecraft
+___________________________________________________________________________________________________________________________________
+
 
 
 
