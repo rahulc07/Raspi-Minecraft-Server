@@ -12,4 +12,4 @@ rm -r Spigot
 rm -r work
 rm -r apache-maven-3.6.0
 rm server.jar
-mv spigot-1.14.4.jar server.jar
+mv spigot-1.15.1.jar server.jar
