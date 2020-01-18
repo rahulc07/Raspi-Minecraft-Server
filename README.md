@@ -11,7 +11,10 @@ git clone https://github.com/xXTeraXx/Raspi-Minecraft-Server.git
 
 cd Raspi-Minecraft-Server
 
+Chmod +x install.sh
+
 sudo ./install.sh
+
 
 (Reboot) with sudo reboot
 
