@@ -6,7 +6,7 @@ sudo apt install screen
 cd /home/pi
 sudo mv Raspi-Minecraft-Server Minecraft_Server
 cd Minecraft_Server
-wget https://getbukkit.org/get/1eb34a7d4db660bb88d02b6c8845957c
+wget https://cdn.getbukkit.org/spigot/spigot-1.15.1.jar
 sudo mv spigot-1.15.1.jar server.jar
 cd /etc
 sudo rm rc.local
