@@ -3,6 +3,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt install openjdk-8-jdk
 sudo apt install screen
+sudo apt install proftpd
 cd /home/pi
 sudo mv Raspi-Minecraft-Server Minecraft_Server
 cd Minecraft_Server
