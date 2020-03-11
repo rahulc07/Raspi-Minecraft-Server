@@ -12,7 +12,7 @@ Go to a "Boot Options" Then Go to "Desktop/CLI"  Go to Console Auto Login then h
 
 HARD PART IS OVER!
 
-sudo apt install git
+sudo apt update && sudo apt install git 
 
 git clone https://github.com/xXTeraXx/Raspi-Minecraft-Server.git
 
