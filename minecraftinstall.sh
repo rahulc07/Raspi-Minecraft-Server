@@ -16,7 +16,7 @@ case $model in
   case $piram in
       1)
     echo Okay
-   ;;
+    ;;
       2)
     sudo rm /home/pi/Server/minecraft.sh
     echo "#!/bin/bash >> /home/pi/Server/minecraft.sh"
@@ -28,7 +28,6 @@ case $model in
     echo "#!/bin/bash >> /home/pi/Server/minecraft.sh"
     echo "java -Xms512M -Xmx4G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui"
    ;;
-    echo Okay
       8)
     echo "Make Sure You Are Using 64bit OS"
     sleep 1
@@ -36,14 +35,17 @@ case $model in
     echo "#!/bin/bash >> /home/pi/Server/minecraft.sh"
     echo "java -Xms512M -Xmx2G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar server.jar nogui"
    ;;
-    echo Okay
+    
       *)
     echo "Invaild Input... Abort"
+    exit 1
    ;;
   esac
  ;;
-    [nN][oO]|[nN])
+    *)
   echo Okay
+ ;;
+esac
 
  
 read -r -p "What Version Do You Want eg:1.8.9 " version
@@ -59,7 +61,8 @@ case $version in
   screen -r buildtools
  ;;
     *)
-  Invalid Input.... Abort
+  echo Invalid Input.... Abort
+  exit 1
  ;;
 esac
 sudo mv spigot-*.jar server.jar
