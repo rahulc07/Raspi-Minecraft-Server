@@ -27,7 +27,7 @@ sudo ./minecraftinstall.sh
 
 YOUR DONE!!!
 
-PS:You still need to port forward with port 25565 for other people to be able to connect to your minecraft server.
+PSA:You still need to port forward with port 25565 for other people to be able to connect to your minecraft server.
 
 
 To see command line do sudo screen -r minecraft
