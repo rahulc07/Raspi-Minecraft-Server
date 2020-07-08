@@ -1,17 +1,17 @@
 # Raspi-Minecraft-Server
 This is a easy to make minecraft server using the Raspberry Pi
 
-Install
+# Prerequisites 
 
 Get a micro-sd-card with raspbian
 
-Commands:
 
+# Basic Configuration
 sudo raspi-config
 Go to a "Boot Options" Then Go to "Desktop/CLI"  Go to Console Auto Login then hit enter Go to advanced options then to Memory Split change that to 16 go down to finish and hit enter. Go back to Advanced options than go to "Expand File System" go down to finish and when it asks you to reboot say yes
 
 HARD PART IS OVER!
-
+# Install
 sudo apt update && sudo apt install git 
 
 git clone https://github.com/xXTeraXx/Raspi-Minecraft-Server.git
