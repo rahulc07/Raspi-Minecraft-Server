@@ -9,7 +9,7 @@ sudo apt install proftpd -yy
 cd /home/pi
 sudo mv Raspi-Minecraft-Server Server
 cd Server
-read -r -p "What Version Do You Want eg:1.8.9" version
+read -r -p "What Version Do You Want eg:1.8.9  " version
 case $version in
     1.1*)
   wget https://cdn.getbukkit.org/spigot/spigot-$version.jar
@@ -24,6 +24,7 @@ case $version in
     *)
   Invalid Input.... Abort
  ;;
+esac
 sudo mv spigot-*.jar server.jar
 cd /etc
 sudo rm rc.local
