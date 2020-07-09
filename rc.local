@@ -12,7 +12,7 @@
 # By default this script does nothing.
 
 
-screen -dm -S minecraft /home/pi/Minecraft_Server/minecraft.sh
+screen -dm -S minecraft /home/pi/Server/minecraft.sh
 
 
 exit 0
