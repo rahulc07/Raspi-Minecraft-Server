@@ -1,4 +1,4 @@
-# Raspi-Minecraft-Server
+# Raspi-Minecraft-Server V2.0
 This is a easy to make minecraft server using the Raspberry Pi
 
 # Prerequisites 
